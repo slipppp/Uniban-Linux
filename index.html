@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UniBan — Linux</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       TOPO
+       ========================= -->
+
+  <header class="topbar">
+
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="UniBan">
+      <span>UniBan</span>
+    </a>
+
+    <nav>
+      <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        Início
+      </a>
+
+      <a href="documentacao.html">
+        <i class="fa-solid fa-book"></i>
+        Documentação
+      </a>
+
+      <a href="#download">
+        <i class="fa-solid fa-download"></i>
+        Download
+      </a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+         ========================= -->
+
+    <section class="hero">
+
+      <div class="hero-text">
+
+        <div class="tag">
+          <i class="fa-brands fa-linux"></i>
+          SISTEMA LINUX
+        </div>
+
+        <h1>UniBan</h1>
+
+        <h2>
+          Linux simples.
+          <br>
+          Rápido. Direto.
+        </h2>
+
+        <p>
+          Uma distribuição baseada no Debian, criada para ser
+          leve, simples e preparada para jogos e uso diário.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            class="download"
+            href="https://github.com/slipppp/Uniban/releases/download/Uniban/uniban-v0.1.iso"
+            download
+          >
+            <i class="fa-solid fa-download"></i>
+            Baixar UniBan
+          </a>
+
+          <a
+            class="secondary"
+            href="documentacao.html"
+          >
+            <i class="fa-solid fa-book"></i>
+            Documentação
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-logo">
+        <img src="assets/logo.png" alt="Logo UniBan">
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         RECURSOS
+         ========================= -->
+
+    <section class="features">
+
+      <article>
+
+        <div class="icon">
+          <i class="fa-solid fa-gauge-high"></i>
+        </div>
+
+        <h3>Leve</h3>
+
+        <p>
+          Ambiente otimizado para consumir menos recursos.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="icon">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+
+        <h3>Gaming</h3>
+
+        <p>
+          Ferramentas e componentes preparados para jogos.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="icon">
+          <i class="fa-solid fa-microchip"></i>
+        </div>
+
+        <h3>Performance</h3>
+
+        <p>
+          Base Debian com foco em desempenho e estabilidade.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+
+        <h3>Simples</h3>
+
+        <p>
+          Interface limpa e fácil de entender.
+        </p>
+
+      </article>
+
+    </section>
+
+
+    <!-- =========================
+         SOBRE
+         ========================= -->
+
+    <section class="about">
+
+      <div>
+
+        <div class="section-tag">
+          <i class="fa-solid fa-circle-info"></i>
+          SOBRE O UNIBAN
+        </div>
+
+        <h2>
+          Feito para quem quer
+          <br>
+          um Linux direto ao ponto.
+        </h2>
+
+        <p>
+          O UniBan utiliza o Debian como base e adiciona
+          ferramentas escolhidas para criar uma experiência
+          mais simples e focada em desempenho.
+        </p>
+
+        <p>
+          A ideia é manter o sistema enxuto sem transformar
+          a instalação e configuração em uma dor de cabeça.
+        </p>
+
+      </div>
+
+
+      <div class="about-card">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <h3>Base Debian</h3>
+
+        <p>
+          Construído sobre uma base Debian para aproveitar
+          seu ecossistema, estabilidade e grande quantidade
+          de pacotes disponíveis.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALERIA
+         ========================= -->
+
+    <section class="gallery">
+
+      <div class="section-heading">
+
+        <div class="section-tag">
+          <i class="fa-solid fa-image"></i>
+          INTERFACE
+        </div>
+
+        <h2>Veja o UniBan em ação</h2>
+
+        <p>
+          Algumas imagens do ambiente do sistema.
+        </p>
+
+      </div>
+
+
+      <div class="gallery-grid" id="gallery">
+
+        <button
+          class="gallery-item"
+          type="button"
+          data-index="0"
+          data-src="assets/desktop-1.png"
+          data-title="Desktop do UniBan"
+        >
+          <img
+            src="assets/desktop-1.png"
+            alt="Desktop do UniBan"
+            loading="lazy"
+          >
+        </button>
+
+        <button
+          class="gallery-item"
+          type="button"
+          data-index="1"
+          data-src="assets/desktop-2.png"
+          data-title="Console do UniBan"
+        >
+          <img
+            src="assets/desktop-2.png"
+            alt="Área de trabalho do UniBan"
+            loading="lazy"
+          >
+        </button>
+
+        <button
+          class="gallery-item"
+          type="button"
+          data-index="2"
+          data-src="assets/desktop-3.png"
+          data-title="Interface do UniBan"
+        >
+          <img
+            src="assets/desktop-3.png"
+            alt="Aplicativos do UniBan"
+            loading="lazy"
+          >
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LIGHTBOX (VISUALIZAÇÃO AMPLIADA)
+         ========================= -->
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Fechar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <button class="lightbox-prev" id="lightboxPrev" type="button" aria-label="Imagem anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <figure class="lightbox-figure">
+        <img id="lightboxImg" src="" alt="">
+        <figcaption class="lightbox-caption">
+          <span id="lightboxTitle"></span>
+          <span class="lightbox-count" id="lightboxCount"></span>
+        </figcaption>
+      </figure>
+
+      <button class="lightbox-next" id="lightboxNext" type="button" aria-label="Próxima imagem">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         DOWNLOAD
+         ========================= -->
+
+    <section
+      class="download-section"
+      id="download"
+    >
+
+      <div class="download-box">
+
+        <div>
+
+          <div class="section-tag">
+            <i class="fa-solid fa-download"></i>
+            DOWNLOAD
+          </div>
+
+          <h2>Baixe o UniBan</h2>
+
+          <p>
+            Experimente a primeira versão do sistema.
+          </p>
+
+          <div class="small-links">
+
+            <a href="documentacao.html">
+              <i class="fa-solid fa-book"></i>
+              Ver documentação
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <a
+          class="download big"
+          href="downloads/uniban-v0.1.iso"
+          download
+        >
+          <i class="fa-solid fa-download"></i>
+          Baixar ISO
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DOCUMENTAÇÃO
+         ========================= -->
+
+    <section class="docs">
+
+      <div class="docs-icon">
+        <i class="fa-solid fa-book"></i>
+      </div>
+
+      <div>
+
+        <h2>Precisa de ajuda?</h2>
+
+        <p>
+          Veja os requisitos, instalação e primeiros passos
+          do UniBan.
+        </p>
+
+      </div>
+
+      <a
+        class="secondary"
+        href="documentacao.html"
+      >
+        Abrir documentação
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       RODAPÉ
+       ========================= -->
+
+  <footer>
+
+    <div class="footer-brand">
+
+      <img
+        src="assets/logo.png"
+        alt="UniBan"
+      >
+
+      <div>
+        <strong>UniBan</strong>
+        <span>Uma distribuição Linux baseada no Debian.</span>
+      </div>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        Início
+      </a>
+
+      <a href="documentacao.html">
+        Documentação
+      </a>
+
+      <a href="#download">
+        Download
+      </a>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 UniBan. Projeto independente.
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

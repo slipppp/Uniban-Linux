@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Documentação — UniBan</title>
+  <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <link rel="icon" href="assets/logo.png">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOPO -->
+  <header class="topbar">
+
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="UniBan">
+      <span>UniBan</span>
+    </a>
+
+    <nav>
+
+      <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        Início
+      </a>
+
+      <a href="documentacao.html">
+        <i class="fa-solid fa-book"></i>
+        Documentação
+      </a>
+
+      <a href="index.html#download">
+        <i class="fa-solid fa-download"></i>
+        Download
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- CABEÇALHO -->
+    <section class="docs-hero">
+
+      <span class="section-tag">
+        <i class="fa-solid fa-book-open"></i>
+        Documentação
+      </span>
+
+      <h1>
+        Documentação do UniBan
+      </h1>
+
+      <p>
+        Informações sobre o sistema, requisitos,
+        instalação e primeiros passos.
+      </p>
+
+    </section>
+
+
+    <!-- BOTÃO SUMÁRIO (SÓ NO CELULAR) -->
+    <button class="docs-mobile-toggle" id="docsMobileToggle" type="button" aria-expanded="false" aria-controls="docsSidebar">
+      <i class="fa-solid fa-bars"></i>
+      Sumário da documentação
+    </button>
+
+    <div class="docs-overlay" id="docsOverlay"></div>
+
+    <div class="docs-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="docs-sidebar" id="docsSidebar">
+
+        <div class="docs-sidebar-head">
+          <span>Nesta página</span>
+          <button class="docs-collapse-btn" id="docsCollapseBtn" type="button" aria-label="Recolher barra lateral">
+            <i class="fa-solid fa-angles-left" id="docsCollapseIcon"></i>
+          </button>
+        </div>
+
+        <nav>
+          <a href="#sobre">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Sobre o UniBan</span>
+          </a>
+          <a href="#requisitos">
+            <i class="fa-solid fa-computer"></i>
+            <span>Requisitos do sistema</span>
+          </a>
+          <a href="#instalacao">
+            <i class="fa-solid fa-download"></i>
+            <span>Instalação</span>
+          </a>
+          <a href="#primeiros-passos">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Primeiros passos</span>
+          </a>
+          <a href="#baixar">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <span>Download</span>
+          </a>
+        </nav>
+
+      </aside>
+
+      <!-- CONTEÚDO -->
+      <div class="docs-content">
+
+    <!-- SOBRE -->
+    <section class="docs-section" id="sobre">
+
+      <div class="docs-title">
+        <i class="fa-solid fa-circle-info"></i>
+
+        <div>
+          <h2>Sobre o UniBan</h2>
+          <p>Conheça o sistema.</p>
+        </div>
+      </div>
+
+      <p>
+        UniBan é uma distribuição Linux baseada no Debian,
+        criada com foco em desempenho, jogos e baixo consumo
+        de recursos.
+      </p>
+
+      <p>
+        O sistema utiliza o ambiente gráfico Xfce,
+        buscando oferecer uma experiência leve mesmo
+        em computadores com hardware mais antigo.
+      </p>
+
+    </section>
+
+
+    <!-- REQUISITOS -->
+    <section class="docs-section" id="requisitos">
+
+      <div class="docs-title">
+        <i class="fa-solid fa-computer"></i>
+
+        <div>
+          <h2>Requisitos do sistema</h2>
+          <p>Hardware necessário.</p>
+        </div>
+      </div>
+
+
+      <div class="requirements">
+
+        <div class="requirement">
+
+          <i class="fa-solid fa-memory"></i>
+
+          <div>
+            <strong>Memória RAM</strong>
+
+            <span>
+              Mínimo: 512 MB
+            </span>
+
+            <span>
+              Recomendado: 2 GB ou mais
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="requirement">
+
+          <i class="fa-solid fa-microchip"></i>
+
+          <div>
+            <strong>Processador</strong>
+
+            <span>
+              x86_64 / AMD64
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="requirement">
+
+          <i class="fa-solid fa-hard-drive"></i>
+
+          <div>
+            <strong>Armazenamento</strong>
+
+            <span>
+              Pelo menos 8 GB disponíveis
+            </span>
+          </div>
+
+        </div>
+
+
+        <div class="requirement">
+
+          <i class="fa-solid fa-usb"></i>
+
+          <div>
+            <strong>Instalação</strong>
+
+            <span>
+              Pendrive ou outra mídia de inicialização
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- INSTALAÇÃO -->
+    <section class="docs-section" id="instalacao">
+
+      <div class="docs-title">
+        <i class="fa-solid fa-download"></i>
+
+        <div>
+          <h2>Instalação</h2>
+          <p>Como começar.</p>
+        </div>
+      </div>
+
+
+      <ol class="steps">
+
+        <li>
+          <strong>Baixe a ISO</strong>
+
+          <p>
+            Baixe a versão mais recente do UniBan
+            pela página oficial.
+          </p>
+        </li>
+
+
+        <li>
+          <strong>Crie um pendrive bootável</strong>
+
+          <p>
+            Grave a ISO em um pendrive usando uma
+            ferramenta de criação de mídia inicializável.
+          </p>
+        </li>
+
+
+        <li>
+          <strong>Inicialize pelo pendrive</strong>
+
+          <p>
+            Reinicie o computador e selecione o
+            pendrive no menu de boot.
+          </p>
+        </li>
+
+
+        <li>
+          <strong>Instale o UniBan</strong>
+
+          <p>
+            Siga as instruções exibidas pelo instalador.
+          </p>
+        </li>
+
+      </ol>
+
+    </section>
+
+
+    <!-- PRIMEIROS PASSOS -->
+    <section class="docs-section" id="primeiros-passos">
+
+      <div class="docs-title">
+        <i class="fa-solid fa-rocket"></i>
+
+        <div>
+          <h2>Primeiros passos</h2>
+          <p>Depois da instalação.</p>
+        </div>
+      </div>
+
+
+      <div class="info-grid">
+
+        <article>
+
+          <i class="fa-solid fa-wifi"></i>
+
+          <h3>Conecte-se à internet</h3>
+
+          <p>
+            Use Wi-Fi ou Ethernet para acessar
+            atualizações e serviços online.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <i class="fa-solid fa-arrows-rotate"></i>
+
+          <h3>Atualize o sistema</h3>
+
+          <p>
+            Mantenha os pacotes do sistema atualizados
+            para receber correções e melhorias.
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <i class="fa-solid fa-gamepad"></i>
+
+          <h3>Instale seus jogos</h3>
+
+          <p>
+            Configure suas ferramentas e plataformas
+            de jogos preferidas.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+      </div>
+      <!-- /.docs-content -->
+
+    </div>
+    <!-- /.docs-layout -->
+
+
+    <!-- DOWNLOAD -->
+    <section class="download-section" id="baixar">
+
+      <div class="download-box">
+
+        <div>
+
+          <span class="section-tag">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            UniBan v0.1
+          </span>
+
+          <h2>
+            Pronto para começar?
+          </h2>
+
+          <p>
+            Baixe a ISO e experimente o UniBan.
+          </p>
+
+        </div>
+
+
+        <a class="download big"
+           href="/downloads/uniban-v0.1.iso"
+           download>
+
+          <i class="fa-solid fa-download"></i>
+          Baixar UniBan
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer>
+
+    <div class="footer-brand">
+
+      <img src="assets/logo.png" alt="UniBan">
+
+      <div>
+        <strong>UniBan</strong>
+        <span>Linux simples e rápido.</span>
+      </div>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="index.html">
+        Início
+      </a>
+
+      <a href="documentacao.html">
+        Documentação
+      </a>
+
+      <a href="index.html#download">
+        Download
+      </a>
+
+    </div>
+
+
+    <p class="copyright">
+      © 2026 UniBan Project
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
